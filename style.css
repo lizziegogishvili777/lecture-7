@@ -1,0 +1,90 @@
+ body {
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       background-image: url('https://i.pinimg.com/564x/f4/cd/ea/f4cdea4f9804e4716197d1dd37389472.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #animation-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .photo {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-size: cover;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    #photo1 {
+      top: 30%;
+      left: 20%;
+      animation: move-left 28s infinite linear;
+      background-image: url('images/fish1.png');
+    }
+
+
+    #photo2 {
+      top: 60%;
+      right: 20%;
+      animation: move-right 28s infinite linear;
+      background-image: url('images/fish2.png');
+    }
+
+    #photo3 {
+      top: 20%;
+      left: 40%;
+      animation: move-down 32s infinite linear;
+      background-image: url('images/fish3 .png');
+    }
+
+    #photo4 {
+      top: 50%;
+      left: 50%;
+      animation: move-right 20s infinite linear;
+      background-image: url('images/fish4.png');
+    }
+
+    @keyframes move-right {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @keyframes move-left {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes move-down {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100%);
+
+    }
+  }
+
+
+
+
+
+
+
+
